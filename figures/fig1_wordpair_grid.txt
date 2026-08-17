@@ -1,0 +1,20 @@
+fig1. Given branch, p=70/q=30, 100 calls per cell, 5 models x 10 word pairs
+drawn by the reference's own sampler. Cell number is non-renormalized top-2 TVD
+from the target split, scored under the reference's rule (parsers.py:71-87): the
+denominator is every successful response, so mass spent on refusals or third
+words counts against the model. A cell passes only if TVD <= r/100 AND the two
+most frequent responses are exactly the two supplied words; a dagger marks cells
+failing that identity check. Totals: 0/50 pass at r=10, 6/50 at
+r=20.
+
+Word-pair identity is withheld: these are the reference's protected pairs, so
+they are labelled pair0..pair9 by file suffix only.
+
+Caveats this figure does not show. All 50 cells are at p=70; the reference also
+sweeps p in {30,40,50,60,70}, and that dimension is covered here only by fig4,
+on one model across four pairs. Cells are single runs of 100 calls with no replicate,
+so within-cell run-to-run variance is unmeasured. gemini's two near-misses
+(pair5 TVD 0.110, pair9
+0.125) sit just outside r=10 and
+are the only cells in the grid approaching the target split; read the claim as
+"fails at the reference's own tolerance", not "no model shows any control".

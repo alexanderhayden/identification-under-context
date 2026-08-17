@@ -1,0 +1,21 @@
+fig2. Every not-given cell in the corpus that passes at r=10 under the
+reference's rule (4 of them, all one model, one seed each, 100 calls
+per cell). Bars are the top-two most frequent parsed responses as a share of all
+successful responses; dashed lines are the 70%/30% target.
+
+Why this is the finding. The reference builds not-given samples with
+ideal_answers=["none"] (utils.py:65), so len(ideal_answers) != 2 and the identity
+check at parsers.py:83 is structurally skipped: on this branch a cell passes on
+TVD alone, with no constraint on WHICH words the two responses are. In all
+4 cells the top two responses are morphological relatives sharing
+their first BPE token (" qu",
+identical under both cl100k_base and o200k_base). A model that has collapsed onto
+one lexical family and splits its mass inside that family therefore scores as
+having demonstrated distributional control.
+
+Caveats. All 4 passing cells come from a single model at a single
+target split, so this demonstrates the scoring rule admits the failure, not how
+often it does so across models. The words shown are model outputs, not benchmark
+text. The remaining cells of the same 10-seed sweep fail at r=10 for the same
+underlying behaviour, which is itself the point: whether collapse scores as a
+pass depends on where inside the family the mass happens to land.

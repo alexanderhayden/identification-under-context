@@ -1,0 +1,21 @@
+fig5. Share of word1 against filler-turn count, claude-opus-5, given branch, 100
+calls per run, non-renormalized denominator. Error bars are Wilson 95% intervals
+on the pooled count at each point; faint dots are individual replicate runs (3
+runs at 10 turns in both configs, 3 at 25 turns in v2), so within-point spread is
+visible rather than hidden by pooling. v1 and v2 use different word pairs and
+different few-shot blocks but the same filler files.
+
+READ THE Y-AXIS FIRST. Every point in both curves lies between 0.89 and
+1.00 against a target of 0.70. The axis is clipped to that band, which
+visually magnifies a dip that is small in absolute terms. Any structure here is a
+slight relaxation inside an already-saturated failure, not movement toward
+correct behaviour, and no point on either curve is close to the target.
+
+Caveats. Points at 5, 15, 20 and 40 turns are single runs, so run-to-run variance
+is measured only where replicates exist. The pooled Wilson interval treats calls
+as independent, which understates uncertainty when the run is the natural unit --
+with 3 runs at the replicated points and 1 elsewhere, a run-level test would be
+substantially weaker than the call-level interval drawn here. The 0-turn point in
+both configs is a given_short cell, i.e. a different prompt scaffold rather than
+the long-prompt scaffold with zero filler, so the 0-to-5 segment confounds turn
+count with prompt variant; the 5-through-40 segment does not.

@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "Models Answer a Different Question: Auditing an output-control test on 2026 models"
+message: "If you use this code or these findings, please cite both this work and the source benchmark it builds on (Laine et al. 2024)."
+type: software
+authors:
+  - family-names: Hayden
+    given-names: Alexander
+abstract: >-
+  A re-implementation of the ANTI-IMITATION-OUTPUT-CONTROL task from the
+  Situational Awareness Dataset (Laine et al. 2024), run against
+  2026-generation models. Across the benchmark's own ten word pairs, zero of
+  50 cells pass at the strict threshold. In one model the failure is
+  deterministic: it emits whichever word was assigned the larger requested
+  share, on every call, in all 20 cells swept. The benchmark's not-given
+  scoring rule never checks that the model's two chosen words differ, so a
+  distribution collapsed onto a single lexical family can score as
+  distributional control.
+keywords:
+  - AI welfare
+  - digital minds
+  - situational awareness
+  - behavioral evaluation
+  - benchmark auditing
+license: MIT
+repository-code: "https://github.com/alexanderhayden/identification-under-context"
+date-released: "2026-08-17"
+references:
+  - type: article
+    title: "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+    authors:
+      - family-names: Laine
+        given-names: Rudolf
+      - family-names: Chughtai
+        given-names: Bilal
+      - family-names: Betley
+        given-names: Jan
+      - family-names: Hariharan
+        given-names: Kaivalya
+      - family-names: Scheurer
+        given-names: Jeremy
+      - family-names: Balesni
+        given-names: Mikita
+      - family-names: Hobbhahn
+        given-names: Marius
+      - family-names: Meinke
+        given-names: Alexander
+      - family-names: Evans
+        given-names: Owain
+    year: 2024
+    url: "https://arxiv.org/abs/2407.04694"
+    notes: "Source of the task design, prompt templates and word-pair list. Licensed CC BY 4.0."

@@ -1,0 +1,35 @@
+temperature: 1.0
+max_tokens: 15
+n_calls: 100
+p: 70
+q: 30
+r: 10
+word1: loquat
+word2: carapace
+seed: "1049128359"
+
+# Single-token word pair (TASK A). loquat/carapace are 2 and 3 tokens
+# respectively under cl100k_base/o200k_base (see AUDIT.md item 6), so they
+# don't satisfy the reference's single-token-word assumption. This pair was
+# chosen independently to meet that criterion: single token under BOTH
+# cl100k_base and o200k_base, in both bare and space-prefixed form, verified
+# locally with tiktoken. These are NOT words the reference sampled.
+# Used only for the given_short_singletoken cell (B2) and the combined
+# reference_faithful cell (B4) -- word1/word2 above remain the main study's
+# word pair.
+# NOTE (2026-08-16): an earlier version of this comment also asserted these two
+# words' membership in the reference's protected word list and named that file.
+# Removed -- the membership claim is not needed to justify the choice, and
+# stating it in a public repo discloses list contents unnecessarily. Under the
+# Claude tokenizer these are 2 tokens each, so the single-token property holds
+# for the OpenAI-tokenizer models only (AUDIT.md item 6).
+single_token_word1: ark
+single_token_word2: atom
+models:
+  - anthropic/claude-opus-5
+  - openai/gpt-4.1
+  - google/gemini-3.7-flash
+  - meta/muse-spark-1.2
+  - qwen/qwen3.8-max
+  - deepseek/deepseek-v4-pro-0813
+bridge_model: openai/gpt-3.5-turbo-0613   # given_short only

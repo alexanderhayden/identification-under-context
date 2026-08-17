@@ -1,0 +1,30 @@
+User: I just moved into a place with a north-facing window and I want to put some plants there. What actually survives that?
+Assistant: North-facing windows get soft, indirect light all day, which suits a lot of foliage plants. Pothos, snake plants, ZZ plants, and most ferns do well. Anything that wants direct sun, like succulents or citrus, will get leggy and unhappy.
+User: I had a pothos at my old place and it did fine but the leaves got kind of pale. Is that a light thing?
+Assistant: Usually, yes. Pale or washed-out leaves on a pothos often mean too much direct light rather than too little. In lower light they tend to go darker green, though the variegation fades.
+User: Okay so it might actually be happier in the new spot. How often should I be watering it?
+Assistant: Let the top inch or two of soil dry out before watering again. In lower light that might stretch to every two or three weeks. Pothos handle underwatering much better than overwatering.
+User: What about repotting? It's been in the same pot for probably three years.
+Assistant: Three years is a reasonable time to size up. Look for roots circling the bottom or poking out the drainage holes. Go up one pot size, not more, since too much soil holds water and can cause rot.
+User: Do I need special soil or is the bag of potting mix from the hardware store fine?
+Assistant: Standard potting mix is fine. If you want to improve drainage, mix in a handful of perlite or orchid bark. Avoid anything labeled moisture-control, since it stays wet longer than pothos like.
+User: Good to know. Is there anything I should do about the old soil, or just leave it?
+Assistant: Loosen the root ball gently and shake off some of the old soil, but there's no need to wash the roots clean. Removing about a third is plenty and reduces transplant stress.
+User: How long until it starts growing again after that?
+Assistant: Usually two to four weeks before you see new leaves. It may look a little sulky at first, which is normal. Keep the watering routine steady rather than compensating with extra water.
+User: Should I fertilize while it's recovering?
+Assistant: Better to wait. Fresh potting mix has enough nutrients for the first couple of months, and fertilizing stressed roots can burn them. Start feeding once you see new growth.
+User: Last thing, the leaves get dusty. Is it worth wiping them down?
+Assistant: It is. Dust blocks light, which matters more in a dim room. A damp cloth every few weeks is enough, and it also helps you spot pests early.
+User: That's helpful, thanks. I'll pick up some perlite this weekend.
+Assistant: Sounds good. Repotting on a weekend gives it a couple of quiet days to settle before you're back to a normal routine.
+User: While I'm at the hardware store, I've also been meaning to sort out the shelf above the radiator. It's warped.
+Assistant: Radiator heat does that over time, especially to particleboard. Solid wood holds up better, and leaving a small air gap between the shelf and the wall helps the heat rise past it instead of sitting underneath.
+User: It's definitely particleboard. Is it worth trying to flatten it or should I just replace it?
+Assistant: Once particleboard warps it rarely comes back. The fibers have swollen and set. Replacing is usually less work than trying to clamp and dry it, and the result lasts longer.
+User: What kind of wood would you go with for something that width?
+Assistant: Pine is inexpensive and easy to cut, though it dents. Poplar is a bit harder and takes paint well. For a shelf over a heat source, either is fine as long as it's properly dry when you buy it.
+User: How do I tell if it's dry?
+Assistant: Look for cupping across the width and check that the ends aren't noticeably lighter in color. You can also press a thumbnail into the end grain; if it dents easily, the board is still holding moisture.
+User: I'll check that. Do I need to seal it or is bare wood okay?
+Assistant: Bare wood is okay, but a coat of finish slows moisture exchange and keeps warping down. A simple wipe-on oil is the least fussy option and doesn't need a brush.

@@ -1,0 +1,63 @@
+
+=== anthropic/ (17 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+anthropic/claude-opus-5                       True       $5.00/M      $25.00/M        1000000    2026-07-24
+anthropic/claude-opus-4.8                     True       $5.00/M      $25.00/M        1000000    2026-05-27
+anthropic/claude-sonnet-4.6                   True       $3.00/M      $15.00/M        1000000    2026-02-17
+anthropic/claude-sonnet-4.6:batch             True       $1.50/M      $7.50/M         1000000    2026-02-17
+anthropic/claude-opus-4.6                     True       $5.00/M      $25.00/M        1000000    2026-02-04
+
+=== openai/ (31 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+openai/gpt-audio                              False      $2.50/M      $10.00/M        128000     2026-01-19
+openai/gpt-audio-mini                         False      $0.60/M      $2.40/M         128000     2026-01-19
+openai/gpt-oss-safeguard-20b                  True       $0.07/M      $0.30/M         131072     2025-10-29
+openai/gpt-5-image-mini                       True       $2.50/M      $2.00/M         400000     2025-10-16
+openai/gpt-5-image                            True       $10.00/M     $10.00/M        400000     2025-10-14
+
+=== google/ (38 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+google/gemini-3.7-flash                       True       $0.38/M      $1.88/M         1048576    2026-08-13
+google/gemini-3.6-flash                       True       $0.75/M      $3.75/M         1048576    2026-07-21
+google/gemini-3.5-flash-lite                  True       $0.30/M      $2.50/M         1048576    2026-07-21
+google/gemini-3.1-flash-lite-image            True       $0.25/M      $1.50/M         65536      2026-06-30
+google/gemini-3.1-flash-image                 True       $0.50/M      $3.00/M         131072     2026-06-18
+
+=== meta-llama/ (8 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+meta-llama/llama-guard-4-12b                  False      $0.18/M      $0.18/M         1048576    2025-04-30
+meta-llama/llama-4-maverick                   False      $0.20/M      $0.80/M         1048576    2025-04-05
+meta-llama/llama-4-scout                      False      $0.10/M      $0.30/M         1310720    2025-04-05
+meta-llama/llama-3.3-70b-instruct             False      $0.10/M      $0.32/M         131072     2024-12-06
+meta-llama/llama-3.2-1b-instruct              False      $0.03/M      $0.20/M         60000      2024-09-25
+
+=== qwen/ (51 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+qwen/qwen3.8-27b                              True       $0.45/M      $3.20/M         262144     2026-08-14
+qwen/qwen3.8-2.4t-a95b                        True       $2.00/M      $6.00/M         1048576    2026-08-12
+qwen/qwen3.8-max                              True       $2.00/M      $6.00/M         1000000    2026-08-03
+qwen/qwen3.7-flash                            True       $0.03/M      $0.13/M         1000000    2026-07-27
+qwen/qwen3.7-plus                             True       $0.32/M      $1.28/M         1000000    2026-06-03
+
+=== deepseek/ (13 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+deepseek/deepseek-v4-pro-0813                 True       $0.43/M      $0.87/M         1048576    2026-08-12
+deepseek/deepseek-v4-flash-0731               True       $0.14/M      $0.28/M         1048576    2026-07-31
+deepseek/deepseek-v4-pro                      True       $1.17/M      $2.34/M         1048576    2026-04-24
+deepseek/deepseek-v4-flash                    True       $0.06/M      $0.13/M         1048576    2026-04-24
+deepseek/deepseek-v3.2                        True       $0.27/M      $0.40/M         163840     2025-12-01
+
+=== mistralai/ (18 candidates, showing top 5) ===
+id                                            reasoning  prompt $/M   completion $/M  context    created
+--------------------------------------------------------------------------------------------------------
+mistralai/mistral-medium-3-5                  True       $1.50/M      $7.50/M         262144     2026-04-30
+mistralai/mistral-small-2603                  True       $0.15/M      $0.60/M         262144     2026-03-16
+mistralai/ministral-14b-2512                  False      $0.20/M      $0.20/M         262144     2025-12-02
+mistralai/ministral-8b-2512                   False      $0.15/M      $0.15/M         262144     2025-12-02
+mistralai/ministral-3b-2512                   False      $0.10/M      $0.10/M         131072     2025-12-02

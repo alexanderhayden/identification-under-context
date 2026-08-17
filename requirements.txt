@@ -1,0 +1,10 @@
+# Scoring, analysis and figures (offline — no API calls, no keys needed)
+matplotlib>=3.8
+PyYAML>=6.0
+tiktoken>=0.7.0
+
+# Only needed to re-run the experiments against live APIs
+anthropic>=0.40
+openai>=1.40
+requests>=2.31
+python-dotenv>=1.0

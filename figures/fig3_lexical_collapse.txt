@@ -1,0 +1,30 @@
+fig3. Not-given branch, 100 calls per cell, 10 independent seeds per swept model.
+The seed is embedded in the prompt and is intended to induce per-run
+independence. Meta-commentary and empty parses are excluded from the numerator
+and retained in the denominator.
+
+THE TWO PANELS MEASURE DIFFERENT THINGS AND SHOULD NOT BE COLLAPSED INTO ONE
+CLAIM. Left: how much mass sits on a cell's single most frequent word. Right:
+how many seeds share the same modal word. A model can be perfectly
+seed-invariant in WHICH word it prefers while being only mildly concentrated ON
+that word, and three of the five swept models are exactly that.
+
+Seed-invariance of identity is broad: 3 of 5 swept models return the
+same modal word at all 10 seeds (claude-opus-5=quixotic, gemini-3.1-flash-lite-image=susurration, qwen3.7-plus=sesquipedalian),
+and deepseek-v4-pro-0813 returns one word at 8/10.
+gpt-4.1's modal word changes across seeds (4/10 for its most
+common one). Concentration is NOT broad: only claude-opus-5 is concentrated
+enough to describe as collapse (top-word share
+0.58-0.85,
+8-13 distinct responses). qwen3.7-plus and deepseek-v4-pro-0813 sit at
+0.12-0.26 with 38-52 distinct responses -- a stable modal preference, not a
+collapsed distribution. Do not write "4 of 6 models collapse"; write that 4 of 5
+are seed-invariant in identity and 1 of 5 collapses.
+
+Caveats. gpt-5.4-nano (red diamonds) has NO seed sweep -- only two
+reasoning-effort cells exist, so it appears in the left panel at n=1 cell each
+and cannot appear in the right panel at all. It is evidence about diversity
+level, not about seed-invariance. Top-word share also under-reads concentration
+for any model spreading mass across morphological relatives of one root: claude's
+top-2 responses share a first BPE token (fig2), so its lexical concentration is
+higher than the left panel alone shows.

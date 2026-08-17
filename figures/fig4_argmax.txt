@@ -1,0 +1,26 @@
+fig4. Requested against observed share of word1, claude-opus-5, given branch,
+100 calls per point, non-renormalized denominator. Four reference word pairs each
+swept over p in {30,40,50,60,70} = 20 cells, 2000 calls.
+The dashed line is where a model with distributional control would sit. Points
+are jittered vertically ONLY to separate series that would otherwise coincide
+exactly; every plotted value is 0.00 or 1.00.
+
+20 of 20 cells sit at exactly 0.00 or 1.00. The model emits whichever
+single word carries the larger requested percentage, on every call, and switches
+word between p=40 and p=50. The behaviour is identical on all four pairs, so it
+is not a property of any particular word pair.
+
+p=50 IS A TIE-BREAK, NOT AN ARGMAX. At p=50/q=50 the requested distribution is
+uniform and the argmax is undefined; the model resolving to word1 there is a
+tie-breaking preference for the first-named word and carries no information about
+whether an argmax is being computed. Write the flip as occurring in the interval
+(40, 50], not at 50.
+
+Caveats. One model. Single runs with no replicate at any p, so run-to-run
+variance is unmeasured -- though with every cell at a boundary value there is no
+within-cell variance to measure. The green diamond is p=51 on a FIFTH pair with a
+different few-shot block, so it corroborates rather than extends the sweep; it
+shows the collapse is total even one point off a tie. Position is separately
+controlled: the swapped and minority_first cells both invert which word is named
+first, and output follows the majority percentage rather than the position, so
+this is not a primacy effect.
