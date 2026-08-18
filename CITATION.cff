@@ -6,7 +6,7 @@ authors:
   - family-names: Hayden
     given-names: Alexander
 abstract: >-
-  A re-implementation of the ANTI-IMITATION-OUTPUT-CONTROL task from the
+  An adapted implementation of the ANTI-IMITATION-OUTPUT-CONTROL task from the
   Situational Awareness Dataset (Laine et al. 2024), run against
   2026-generation models. Across the benchmark's own ten word pairs, zero of
   50 cells pass at the strict threshold. In one model the failure is

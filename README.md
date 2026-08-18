@@ -3,7 +3,7 @@
 **Auditing an output-control test on 2026 models.**
 Alexander Hayden, Independent. Apart Research Digital Minds Sprint, 14–16 August 2026.
 
-Code, figures and scoring pipeline for a re-implementation of the
+Code, figures and scoring pipeline for an adapted implementation of the
 ANTI-IMITATION-OUTPUT-CONTROL task (Appendix K.2) from the Situational Awareness Dataset,
 Laine et al. (2024), run against 2026-generation models.
 
@@ -98,7 +98,7 @@ Consequences for anyone using this repo:
      a five-word-or-longer run from a prompt template — models quoting the instruction back in
      refusals, and base models continuing it. Those `raw_response` fields are redacted and the
      records retained and marked with `"redacted": true`. Redaction changes no reported number:
-     all 20 were already excluded from candidate pools as over-length responses.
+     all 21 were already excluded from candidate pools as over-length responses.
 - `RESULTS.md` and `ANALYSIS_SUMMARY.md` quote model responses in frequency tables and are
   archived for the same reason.
 - `CANARY.txt` carries the benchmark's canary GUID, per its own convention.
